@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
         txt_timer.text = "Timer : " + timeRemaining.ToString();
 
 
-        if(score == totalCoins)
+        if(score >= totalCoins)
         {
             if(timeLeft <= timerValue)
             {

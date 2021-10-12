@@ -20,7 +20,7 @@ public class PlayerLogicScript : MonoBehaviour
     {
         if (other.CompareTag("Coin"))
         {
-            GameManager.instance.IncreaseScoreBy(10);
+            GameManager.instance.IncreaseScoreBy(1);
             Destroy(other.gameObject);
         }
         if (other.CompareTag("Water"))
