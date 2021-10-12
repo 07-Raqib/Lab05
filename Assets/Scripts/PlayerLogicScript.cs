@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerLogicScript : MonoBehaviour
 {
+    public ParticleSystem vfx_coin;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class PlayerLogicScript : MonoBehaviour
         if (other.CompareTag("Coin"))
         {
             GameManager.instance.IncreaseScoreBy(1);
+            Destroy(Instantiate(vfx_coin,other.gameObject.transform.position,Quaternion.identity),3f);
             Destroy(other.gameObject);
         }
         if (other.CompareTag("Water"))
