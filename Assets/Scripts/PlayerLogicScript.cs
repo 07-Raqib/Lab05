@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class CoinScript : MonoBehaviour
+public class PlayerLogicScript : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,10 +18,14 @@ public class CoinScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Coin"))
         {
             GameManager.instance.IncreaseScoreBy(10);
-            Destroy(gameObject);
+            Destroy(other.gameObject);
+        }
+        if (other.CompareTag("Water"))
+        {
+            SceneManager.LoadScene("GameLoseScene");
         }
     }
 }

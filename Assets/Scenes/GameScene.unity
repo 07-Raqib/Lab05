@@ -1033,6 +1033,7 @@ GameObject:
   m_Component:
   - component: {fileID: 514179201}
   - component: {fileID: 511306081}
+  - component: {fileID: 513957026}
   - component: {fileID: 504244545}
   - component: {fileID: 519159745}
   - component: {fileID: 517915969}
@@ -1043,6 +1044,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &513957026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513957025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4ac1e47129c0d48a791895ebdf161f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &513957027
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,6 +1367,11 @@ PrefabInstance:
     - target: {fileID: 6097434492816708854, guid: c74e8b9c28ff74f30baa0db706d43722,
         type: 3}
       propertyPath: m_Name
+      value: Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097434492816708854, guid: c74e8b9c28ff74f30baa0db706d43722,
+        type: 3}
+      propertyPath: m_TagString
       value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 6097434492816708849, guid: c74e8b9c28ff74f30baa0db706d43722,
